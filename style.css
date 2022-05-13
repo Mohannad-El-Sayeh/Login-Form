@@ -1,0 +1,99 @@
+body {
+  font-family: Roboto;
+  background-color: gray;
+  color: black;
+  font-size: medium;
+  margin: 0;
+}
+
+header {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: black;
+  color: gainsboro;
+  padding: 9px;
+  text-decoration: none;
+}
+
+.box {
+  position: absolute;
+  background-color: darkgrey;
+  border-radius: 16px;
+  padding: 48px;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -5%);
+}
+
+.name_input {
+  border-radius: 5px;
+  min-height: 24px;
+  display: flex;
+  width: 90%;
+}
+
+#name_label,
+#name_input {
+  display: block;
+}
+
+.text_input {
+  width: 100%;
+  border-radius: 5px;
+  min-height: 24px;
+}
+
+input[type="text"]:hover,
+:focus,
+input[type="email"]:hover,
+:focus,
+input[type="password"]:hover,
+:focus,
+select:hover,
+:focus {
+  border-radius: 5px;
+  min-height: 24px;
+  background-color: lightgrey;
+}
+
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+select {
+  width: 50%;
+  border-radius: 5px;
+  min-height: 24px;
+  margin-left: 12px;
+}
+
+#submit {
+  background-color: gray;
+  position: fixed;
+  left: 50%;
+  border-radius: 5px;
+  transform: translate(-50%, 0%);
+  height: 32px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(190, 190, 185);
+}
+
+#submit:focus {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(190, 190, 185);
+}
+
+#name_div {
+  display: flex;
+  width: 100%;
+}
+
+.check_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

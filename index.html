@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="header">Register</h1>
+    </header>
+    <div class="box">
+      <form>
+        <div id="error" style="display: none">
+          <h3>Please fill all the fields.</h3>
+        </div>
+        <div id="name_div">
+          <div class="name_field">
+            <label>First Name</label>
+            <input type="text" name="firstName" class="name_input" />
+          </div>
+          <div class="name_field" id="last_name">
+            <label>Last Name</label>
+            <input type="text" name="lastName" class="name_input" />
+          </div>
+        </div>
+        <br />
+        <div class="field">
+          <label>Email</label>
+          <input type="email" name="email" class="text_input" />
+        </div>
+        <br />
+        <div class="field">
+          <label>Password</label>
+          <input type="password" name="password" class="text_input" />
+        </div>
+        <br />
+        <div id="gender-div" class="field">
+          <label>Gender</label>
+          <select id="gender" name="gender">
+            <option value="Null">Please Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <br />
+        <div id="agree-div" class="check_box">
+          <input type="checkbox" id="agree" name="agree" />
+          <label>I agree to the terms and conditions</label>
+        </div>
+        <br />
+        <input type="submit" name="submit" value="Sign up" id="submit" />
+      </form>
+      <br />
+      <br />
+      <p id="switch" style="cursor: context-menu;">
+        Already have an account?<br />
+        <span id="login_instead" style="color: rgb(72, 72, 206); text-decoration: underline; cursor: pointer;">Login instead.</span>
+      </p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
