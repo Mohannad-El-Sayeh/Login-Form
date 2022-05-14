@@ -22,6 +22,7 @@ function onSubmit(e) {
     var date = new Date();
     date.setTime(date.getTime() + 30 * 24 * 60 * 60 * 1000);
     token.then(x => document.cookie = "token=" + x + "; expires=" + date.toUTCString());
+    showError("Signed up successfully.");
   } else if (mode == LOGIN && validateLogin()) {
     var savedCookie = document.cookie;
     token.then(x => login(x, savedCookie));
