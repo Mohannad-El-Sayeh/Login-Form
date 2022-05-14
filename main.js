@@ -50,6 +50,7 @@ function switchMode() {
     document
       .getElementById("signup_instead")
       .addEventListener("click", switchMode);
+      document.title = "Login"
     mode = LOGIN;
   } else if (mode === LOGIN) {
     mode = SIGNUP;
